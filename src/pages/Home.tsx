@@ -1,3 +1,4 @@
+import HomeFooter from "../components/Footer/Footer";
 import Description from "../components/Header/Description";
 import NavBar from "../components/Header/NavBar";
 
@@ -6,6 +7,7 @@ function HomePage() {
     <>
       <NavBar />
       <Description />
+      <HomeFooter />
     </>
   );
 }
