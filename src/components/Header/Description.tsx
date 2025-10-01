@@ -1,14 +1,16 @@
-import { DiscIcon } from "lucide-react";
-
 function Description() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-0 gap-8">
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-white text-center text-4xl md:text-6xl font-extrabold font-poppins max-w-4xl leading-tight">
-          Venha para a TechLab!
+        <h1 className="text-white text-center text-4xl md:text-6xl font-extrabold max-w-4xl leading-tight">
+          Venha para a 
+          <br />
+          <p className="mask-l-from-neutral-900">
+            TechLab!
+          </p>
         </h1>
 
-        <p className="text-white text-center text-lg font-light font-poppins max-w-xl leading-relaxed">
+        <p className="text-white text-center text font-light font max-w-xl leading-relaxed">
           A TechLab é uma loja especializada no desenvolvimento de Bots, Sites e
           Automações em geral. Entregamos diversas soluções com base no seu
           problema!

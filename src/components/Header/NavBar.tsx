@@ -7,7 +7,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative w-full bg-neutral-800 h-20 px-4 md:px-8 flex justify-center items-center">
+    <nav className="relative w-full h-20 px-4 md:px-8 flex justify-center items-center border-b-2 border-b-neutral-800">
       <div className="flex flex-row items-center gap-4 md:gap-10 w-full max-w-3xl justify-between">
         <div className="flex items-center gap-2">
           <img src={logo} className="h-10" alt="TechLab Logo" />
@@ -44,13 +44,16 @@ function NavBar() {
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
+          style={{
+            paddingRight: "20px"
+          }}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={35} /> : <Menu size={35} />}
         </button>
       </div>
 
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-neutral-900 shadow-lg md:hidden">
+        <div className="absolute top-20 left-0 w-full shadow-lg md:hidden" style={{padding: "16px"}}>
           <ul className="flex flex-col items-center gap-6 py-6 text-white font-medium">
             <li>
               <a
