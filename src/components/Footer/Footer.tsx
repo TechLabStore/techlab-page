@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 function Footer() {
   return (
     <footer
-      className="text-white py-6 px-4 border-t-2 border-t-neutral-800"
+      className="text-white py-6 px-4 border-t-2 border-t-neutral-800 bg-neutral-900"
       style={{ padding: "6px"}}
     >
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-around md:h-35 md:items-center">
